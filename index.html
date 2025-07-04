@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name = "viewport" content="width = device-width, initial-scale = 1.0"/>
+        <title>ExcuseG</title>
+        <link rel="stylesheet" href="style1.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <h1>ExcuseG 💭</h1>
+            <p>Generate Excuse For Any Situation!</p>
+            
+                <label for="Situation">Choose a Situation:</label>
+                <select id="Situation" name="Situation">
+                    <option value="school">School</option>
+                    <option value="work">Work</option>
+                    <option value="family">Family</option>
+                    <option value="social">Social</option>
+                    <option value="health">Health</option>
+                    <option value="other">Other</option>
+                    <option value="custom">Custom</option>
+                    <option value="none">None</option>
+                    <option value="all">All</option>
+                    <option value="random">Random</option>
+                </select>
+
+                <input type="text" id="customsituation" name="customsituation" placeholder="Enter custom Situation" hidden/>
+
+                <label for="style">Choose Excuse Style</label>
+                <select id="style">
+                    <option value="formal">Formal</option>
+                    <option value="informal">Informal</option>
+                    <option value="humorous">Humorous</option>
+                    <option value="sarcastic">Sarcarstic</option>
+                    <option value="apologetic">Apologetic</option>
+                    <option value="creative">Creative</option>
+                    <option value="random">Random</option>
+                    <option value="none">None</option>
+                    <option value="all">All</option>
+                    <option value="custom">Custom</option>
+                </select>
+
+                <button id="generate">Generate Excuse</button>
+
+                <div class="excuse-container">
+                    <h2>Generate Excuse</h2>
+                    <p id="excuse">Click the button to generate excuse</p>
+                    <button id="copy">Copy Excuse</button>
+                </div>
+                <div class="history-container">
+                    <h2>Excuse History</h2>
+                    <ul id="history">
+                        <!-- 
+                            Container for dynamically added history items.
+                            History items will be inserted here at runtime by the application logic.
+                        -->
+                    </ul>
+                </div>
+                <div class="clear-history-container">
+                    <button id="clear-history">Clear History</button>
+                </div>
+                <div class="about-container">
+                    <h2>About ExcuseG</h2>
+                    <p>ExcuseG is a web application that generates excuses for various situations. Whether you need an excuse for school, work, family, or any other scenario, ExcuseG has got you covered!</p>
+                    <p>Developed by <a href="suyash._.mhatre">Suyash Mhatre</a>
+                </div>
+                <div class="container-footer">
+                    <p>© 2025 ExcuseG. All rights reserved.</p>
+                    <p>Made with ❤️ by <a href="suyash._.mhatre">Suyash Mhatre</a>
+                </div>
+
+                <script src="script.js"></script>.
+        </div>
+    </body>
+</html>
